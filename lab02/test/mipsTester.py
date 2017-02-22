@@ -309,7 +309,7 @@ def runTests(prog, tests, \
     expect_regs = test[2]
     expect_mem = test[3]
     # ------------
-    modFile = tempfile.NamedTemporaryFile(mode='w+',suffix=".asm",delete=False)
+    modFile = tempfile.NamedTemporaryFile(mode='w+',suffix=".asm",encoding="utf-8",delete=False)
     # Do not delete. Windows requires tempFile 2b closed b4 Mars opens it for execution
     changed = False
     with open (prog, 'r', encoding="latin-1", errors="surrogateescape") as origFile:
