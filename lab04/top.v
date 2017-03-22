@@ -12,7 +12,7 @@ tutorial duv(
 	.out(out)
 );
 
-initial begin;
+initial begin
   a = 0;
   b = 0;
   c = 0;
@@ -30,13 +30,12 @@ initial begin;
   c = 0;
   d = 0;
   r = 1;
-  #100 ;
+  #100 
   a = 1;
   b = 1;
   c = 1;
   d = 1;
-  r = 1;
-  #100
+  #100;
 end
 
 endmodule
